@@ -1,6 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:myapp/container_widget.dart';
+import 'package:myapp/latihan.dart';
 import 'package:myapp/news_container.dart';
+import 'package:myapp/row_column/column.dart';
+import 'package:myapp/row_column/latihan_rowcolumn.dart';
+
+import 'row_column/row_widget.dart';
 
 void main (){
   runApp(MyApp());
@@ -12,15 +17,15 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-    title: 'Belajar Flutter',
+    title: 'Biodata',
     home: Scaffold(
       backgroundColor: Colors.blueAccent,
       appBar: AppBar(
-        title: Text('Belajar Flutter'),
+        title: Text('Biodata'),
         centerTitle: true,
         backgroundColor: Color.fromARGB(188, 255, 64, 160),
       ),
-      body: NewsContainer(),
+      body: Latihan(),
     ),
     );
   }
