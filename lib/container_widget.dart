@@ -11,7 +11,7 @@ class BelajarContainer extends StatelessWidget {
       padding: EdgeInsets.only(left:10),
       margin: EdgeInsets.all(10),
       decoration: BoxDecoration(
-        color: Color.fromARGB(197, 230, 39, 156),
+        color: Color.fromARGB(197, 74, 39, 230),
         borderRadius: BorderRadius.circular(10),
         border: Border.all(
           color: Colors.black,

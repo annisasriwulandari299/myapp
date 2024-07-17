@@ -1,13 +1,12 @@
+
 import 'package:flutter/material.dart';
 import 'package:myapp/container_widget.dart';
 import 'package:myapp/latihan.dart';
-import 'package:myapp/news_container.dart';
-import 'package:myapp/row_column/column.dart';
-import 'package:myapp/row_column/latihan_rowcolumn.dart';
+// import 'package:myapp/news_container.dart';
+// import 'package:myapp/row_column/column_widget.dart';
+// import 'package:myapp/row_column/latihan_row_column.dart';
 
-import 'row_column/row_widget.dart';
-
-void main (){
+void main() {
   runApp(MyApp());
 }
 
@@ -17,22 +16,35 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-    title: 'Biodata',
-    home: Scaffold(
-      backgroundColor: Colors.blueAccent,
-      appBar: AppBar(
-        title: Text('Biodata'),
-        centerTitle: true,
-        backgroundColor: Color.fromARGB(188, 255, 64, 160),
+      home: Scaffold(
+        backgroundColor: Color.fromARGB(196, 116, 116, 194),
+        appBar: AppBar(
+          title: Text('Biodata'),
+          centerTitle: true,
+          backgroundColor: Color.fromARGB(255, 255, 255, 255),
+        ),
+        body: Biodata(),
       ),
-      body: Latihan(),
-    ),
     );
   }
 }
 
-class BelajarText extends StatelessWidget {
-  const BelajarText({
+class NewWidget extends StatelessWidget {
+  const NewWidget({
+    super.key,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return BelajarContainer();
+  }
+}
+
+class ContainerWidget {
+}
+
+class TextWidget extends StatelessWidget {
+  const TextWidget({
     super.key,
   });
 
@@ -40,13 +52,14 @@ class BelajarText extends StatelessWidget {
   Widget build(BuildContext context) {
     return Center(
       child: Text(
-        'Hello World',
-          style: TextStyle(
-            color: Colors.white,
-            fontSize: 30,
-            fontWeight: FontWeight.bold
-          ),
-    ),
-         );
+        'Hello Bray',
+        style: TextStyle(
+          fontSize: 24,
+          color: Color.fromARGB(255, 255, 255, 255),
+          fontWeight: FontWeight.bold,
+          backgroundColor: Colors.black,
+        ),
+      ),
+    );
   }
 }
